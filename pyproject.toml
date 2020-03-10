@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "paspr_gendiff"
+version = "0.1.0"
+description = "tool for presenting the differences in config files"
+authors = ["Your Name <you@example.com>"]
+packages = [
+  { include = "gendiff" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+gendiff = "gendiff.scripts.gendiff:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+
+
