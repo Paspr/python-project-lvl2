@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "paspr_gendiff"
-version = "0.1.0"
-description = "tool for presenting the differences in config files"
+version = "0.1.2"
+description = "tool for presenting the differences in configuration files"
 authors = ["Your Name <you@example.com>"]
 packages = [
   { include = "gendiff" },
