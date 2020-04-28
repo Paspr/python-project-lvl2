@@ -6,4 +6,7 @@ install:
 lint:
 	poetry run flake8 gendiff
 
-.PHONY: install lint
+test:
+    poetry run pytest
+
+.PHONY: install lint test
