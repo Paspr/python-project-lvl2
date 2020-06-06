@@ -1,16 +1,10 @@
 import argparse
-import json
-import os
 import textwrap
+from gendiff import loader
 
 
-def generate_diff(path_to_file1, path_to_file2):
-    dir = os.path.dirname(__file__)
-    file1_name = os.path.join(dir, path_to_file1)
-    file2_name = os.path.join(dir, path_to_file2)
-    file1 = json.load(open(file1_name))
-    file2 = json.load(open(file2_name))
-    '''convert dict keys to sets and comparing them'''
+def generate_diff(file1, file2):
+    '''convert dict keys to sets and compare them'''
     setfile1 = set(file1.keys())
     setfile2 = set(file2.keys())
     '''#get new keys in the second file '+'''
@@ -45,12 +39,15 @@ def generate_diff(path_to_file1, path_to_file2):
 
 
 def main():
+    file1 = "1"
+    file2 = "2"
     parser = argparse.ArgumentParser(description='Generate diff')
     parser.add_argument("first_file")
     parser.add_argument("second_file")
     parser.add_argument('-f', '--format', help='set format of output')
     args = parser.parse_args()
-    diff = generate_diff(args.first_file, args.second_file)
+    file1, file2 = loader.load_file(args.first_file, args.second_file)
+    diff = generate_diff(file1, file2)
     print(diff)
 
 

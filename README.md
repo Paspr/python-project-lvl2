@@ -6,6 +6,10 @@
 
 This repository contains the second Python project of Hexlet education platform: a CLI tool for presenting the differences in configuration files.
 
-## Installation and running
+## Installation and JSON comparing
 
 [![asciicast](https://asciinema.org/a/0xxhUK2PWFa5yQ0UWvnHZuTKx.svg)](https://asciinema.org/a/0xxhUK2PWFa5yQ0UWvnHZuTKx)
+
+## YAML comparing
+
+[![asciicast](https://asciinema.org/a/ixHn8n8NszHCw7ysYuVqSwXHj.svg)](https://asciinema.org/a/ixHn8n8NszHCw7ysYuVqSwXHj)

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "paspr_gendiff"
-version = "0.1.2"
+version = "0.1.5"
 description = "tool for presenting the differences in configuration files"
 authors = ["Your Name <you@example.com>"]
 packages = [
@@ -9,10 +9,11 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.6"
-pytest = "^5.4.1"
+PyYAML = "^5.3.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7.9"
+pytest = "^5.4.1"
 
 [tool.poetry.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
