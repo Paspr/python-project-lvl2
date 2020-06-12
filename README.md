@@ -13,3 +13,7 @@ This repository contains the second Python project of Hexlet education platform:
 ## YAML comparing
 
 [![asciicast](https://asciinema.org/a/ixHn8n8NszHCw7ysYuVqSwXHj.svg)](https://asciinema.org/a/ixHn8n8NszHCw7ysYuVqSwXHj)
+
+## Recursive comparing
+
+[![asciicast](https://asciinema.org/a/zFziElqSWYZeey6qmmFdsGqBD.svg)](https://asciinema.org/a/zFziElqSWYZeey6qmmFdsGqBD)
